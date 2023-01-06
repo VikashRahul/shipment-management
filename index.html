@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+
+<head>
+    <title>Shipment management form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- <script type ="text/javascript" src="http://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script> -->
+    <!-- <script type ="text/javascript" src="script.js"></script> -->
+    
+
+</head>
+
+<body>
+    <div class="container">
+        <div class = "page-header text-center">
+           <h2>SHIPMENT MANAGEMENT FORM</h2>
+        </div>
+        
+        <form id="empform" method="get">
+            <div class="form-group">
+                <label>Shipment-No:</label>
+                <input type="text" class="form-control" id="shipno" placeholder="Enter Shipment No." onchange="getShipment()">
+            </div>
+            <div class="form-group">
+                <label> Description:</label>
+                <input type="text" class="form-control" id="desc" placeholder="Enter Description" disabled>
+            </div>
+            <div class="form-group">
+                <label>Source:</label>
+                <input type="text" class="form-control" id="source" placeholder="Enter Source" disabled>
+            </div>
+            <div class="form-group">
+                <label>Destination:</label>
+                <input type="text" class="form-control" id="dest" placeholder="Enter Destination" disabled>
+            </div>
+            <div class="form-group">
+                <label>Shipping date:</label>
+                <input type="text" class="form-control" id="shipdate" placeholder="Enter Shipping date" disabled>
+            </div>
+            <div class="form-group">
+                <label>Expected delivery date:</label>
+                <input type="text" class="form-control" id="deldate" placeholder="Enter Expected delivery date" disabled>
+            </div>
+            <div class = "form-group text-center">
+                <button type="button" class="btn btn-lg btn-primary" id ="save" onclick="saveData()" disabled>Save</button>
+                <button type="button" class="btn btn-lg btn-primary" id ="update" onclick="updateData()" disabled>Update</button>
+                <button type="button" class="btn btn-lg btn-primary" id ="reset" onclick="resetForm()" disabled>Reset</button>
+
+            </div>
+        </form>    
+    </div>
+
+    <script type ="text/javascript" src="http://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+    <script type ="text/javascript" src="script.js"></script>
+</body>
+
+
+</html>
